@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+}
+
+#navbar {
+  background-color: #222323;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 1px solid white;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar header {
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+#logo {
+  width: 80%;
+}
+
+#navbar h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+#navbar h2 {
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+}
+
+#navbar ul {
+  padding: 0;
+}
+
+#navbar li {
+  list-style-type: none;
+  width: 100%;
+  border-top: 1px solid white;
+  padding: 15px 30px;
+}
+
+#navbar li:hover>.nav-link {
+  color: #da2929;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  list-style-type: none;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+#main-doc {
+  margin-left: 250px;
+}
+
+#introduction {
+  background-color: #222323;
+  text-align: center;
+  color: white;
+  padding: 30px 10% 60px;
+}
+
+.legend-profile {
+  padding: 0 10% 60px 5%;
+  display: flex;
+  background-color: #fdfaef;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legend-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.legend-portrait {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+table {
+  margin: 0 auto;
+  /* width: 100%; */
+}
+
+tr {
+  text-align: left;
+}
+
+th {
+  width: 110px;
+}
+
+.legend-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-top: 120px;
+  /* background-color: green; */
+}
+
+header {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 35px;
+  font-family: 'Oswald', sans-serif;
+  color: #da2929;
+}
+
+.legend-bio h2, #introduction h2 {
+  margin: 35px 0 20px;
+  font-weight: lighter;
+  font-size: 1.6em;
+}
+
+.legend-abilities {
+  background-color: #222323;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 0;
+}
+
+.legend-abilities h3 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+.legend-abilities p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.ability-info {
+  width: 25%;
+  text-align: center;
+}
+
+.ability-icon {
+  width: 100%;
+}
+
+.legend-abilities h4 {
+  color: #da2929;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 1024px) {
+  .legend-profile {
+    font-size: 14px;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .legend-bio {
+    margin-top: 20px;
+  }
+  .ability-info {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #navbar {
+    width: 100%;
+    height: 60vh;
+    position: static;
+    border-bottom: 2px solid white;
+  }
+  #logo {
+    width: 30%;
+    min-width: 200px;
+  }
+  #main-doc {
+    margin: 0;
+  }
+  #introduction {
+    padding: 30px 40px 60px;
+  }
+  .legend-profile {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .legend-profile {
+    flex-direction: column-reverse;
+  }
+  .legend-info {
+    /* flex-direction: row; */
+    width: 100%;
+    align-items: center;
+  }
+  .legend-portrait {
+    width: 85%;
+  }
+  .legend-bio {
+    /* flex-direction: row; */
+    width: 100%;
+  }
+  .ability-info p {
+    font-size: 1em;
+  }
+  .ability-info {
+    /* border: 1px solid pink; */
+    width: 30%;
+  }
+}
