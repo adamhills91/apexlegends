@@ -140,10 +140,9 @@ th {
   justify-content: center;
   width: 50%;
   margin-top: 120px;
-  /* background-color: green; */
 }
 
-header {
+.main-section header {
   text-transform: uppercase;
   font-size: 3em;
   font-family: 'Oswald', sans-serif;
@@ -252,11 +251,14 @@ header {
   .ability-info {
     width: 30%;
   }
+  .ability-info h3 {
+    font-size: 1.3em;
+  }
   code {
     font-size: 0.8em;
   }
-  header {
-    font-size: 1.5em;
+  .main-section header {
+    font-size: 2em;
     letter-spacing: 2px;
     padding: 60px 0 0 8%;
   }
