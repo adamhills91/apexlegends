@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 16px;
 }
@@ -21,12 +23,14 @@ body {
 #navbar header {
   text-align: center;
   color: white;
-  margin: 30px 0;
+  margin: 0;
   text-transform: uppercase;
+  background-color: #222323;
 }
 
 #logo {
   width: 80%;
+  margin: 30px 0;
 }
 
 #navbar h1 {
@@ -43,13 +47,14 @@ body {
 
 #navbar ul {
   padding: 0;
+  margin: 0;
 }
 
 #navbar li {
   list-style-type: none;
   width: 100%;
   border-top: 1px solid white;
-  padding: 15px 30px;
+  padding: 0;
 }
 
 #navbar li:hover>.nav-link {
@@ -64,6 +69,7 @@ body {
   list-style-type: none;
   font-size: 1.2em;
   font-weight: lighter;
+  padding: 15px 30px;
 }
 
 #main-doc {
@@ -74,15 +80,34 @@ body {
   background-color: #222323;
   text-align: center;
   color: white;
-  padding: 30px 10% 60px;
+  padding: 60px 10%;
+}
+
+#introduction header {
+  background-color: #222323;
+  padding: 0;
+}
+
+#facts {
+  text-align: left;
+  background-color: #fdfaef;
+  color: #222323;
+  margin-top: 50px;
+  padding: 20px 50px;
+  border-radius: 7px;
+}
+
+#facts li {
+  margin: 15px 0;
 }
 
 .legend-profile {
-  padding: 0 10% 60px 5%;
-  display: flex;
+  padding: 0 5% 40px 10%;
   background-color: #fdfaef;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .legend-info {
@@ -99,7 +124,6 @@ body {
 
 table {
   margin: 0 auto;
-  /* width: 100%; */
 }
 
 tr {
@@ -121,10 +145,12 @@ th {
 
 header {
   text-transform: uppercase;
-  font-size: 2em;
-  margin-bottom: 35px;
+  font-size: 3em;
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+  padding: 60px 0 0 10%;
   color: #da2929;
+  background-color: #fdfaef;
 }
 
 .legend-bio h2, #introduction h2 {
@@ -188,16 +214,17 @@ header {
     height: 60vh;
     position: static;
     border-bottom: 2px solid white;
+    border-right: none;
   }
   #logo {
     width: 30%;
-    min-width: 200px;
+    /* min-width: 200px; */
   }
   #main-doc {
     margin: 0;
   }
   #introduction {
-    padding: 30px 40px 60px;
+    padding: 30px 20px 60px;
   }
   .legend-profile {
     font-size: 16px;
@@ -206,10 +233,10 @@ header {
 
 @media screen and (max-width: 635px) {
   .legend-profile {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 20px 8% 60px;
   }
   .legend-info {
-    /* flex-direction: row; */
     width: 100%;
     align-items: center;
   }
@@ -217,14 +244,20 @@ header {
     width: 85%;
   }
   .legend-bio {
-    /* flex-direction: row; */
     width: 100%;
   }
   .ability-info p {
     font-size: 1em;
   }
   .ability-info {
-    /* border: 1px solid pink; */
     width: 30%;
+  }
+  code {
+    font-size: 0.8em;
+  }
+  header {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 60px 0 0 8%;
   }
 }
